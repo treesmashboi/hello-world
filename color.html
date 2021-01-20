@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      function colorChange() {
+        let array = ["black", "blue", "orange", "red"];
+        let color;
+        switch (document.getElementById("forward").style.color) {
+          case array[0]:
+            color = array[1];
+            break;
+          case array[1]:
+            color = array[2];
+            break;
+          case array[2]:
+            color = array[3];
+            break;
+          default:
+            color = array[0];
+        }
+        document.getElementById("forward").style.color = color;
+      }
+    </script>
+    <p id="forward" style="color: black;">Text</p>
+    <button onClick="colorChange('forward')">Click Me</button>
+  </body>
+</html>
