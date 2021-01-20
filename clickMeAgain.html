@@ -1,0 +1,17 @@
+<span style="background-color:#D94A38;color:white;" onclick="clickMeEvent(this)">Click Me</span>
+<script type="application/javascript">
+function clickMeEvent(obj) {
+  if (obj.innerHTML == "Click Me") {
+    obj.innerHTML = "Click Me<br>Click Me Again";
+    return;
+  }
+  if (obj.innerHTML == "Click Me<br>Click Me Again") {
+    obj.innerHTML = "Thank You";  
+    return; 
+  }
+  if (obj.innerHTML == "Thank You") {
+  obj.innerHTML = "Goodbye";  
+    return; 
+  }
+}
+</script>
