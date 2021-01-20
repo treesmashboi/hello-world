@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<title>Freezer</title><script src="https://raw.githubusercontent.com/CharlieHawker/tableColumnFreeze.js/master/tableColumnFreeze.js"></script>
+<script>
+// After including tableColumnFreeze.js
+var freezer = document.getElementById('freezer');
+new TableColumnFreeze(freezer);
+</script>
+</head>
+<body dir="ltr">
+<div id="freezer">
+  <table>
+    <thead>
+      <tr><th>Column 1</th><th>Column 2</th><th>Column 3</th></tr>
+    </thead>
+    <tbody>
+      <tr><th>Frozen</th><td>Not frozen</td><td>Not frozen</td></tr>
+      <tr><th>Frozen</th><td>Not frozen</td><td>Not frozen</td></tr>
+      <tr><th>Frozen</th><td>Not frozen</td><td>Not frozen</td></tr>
+      <tr><th>Frozen</th><td>Not frozen</td><td>Not frozen</td></tr>
+     </tbody>
+  </table>
+</div>
+</body>
+</html>
